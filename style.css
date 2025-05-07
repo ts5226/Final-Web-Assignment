@@ -386,8 +386,7 @@ footer {
     transform: translate(-50%, -50%) scale(0.95);
     opacity: 0.6;
   }
-}
-.menu-toggle {
+  .menu-toggle {
   display: none;
   background: none;
   border: none;
@@ -396,6 +395,8 @@ footer {
   cursor: pointer;
   z-index: 101;
 }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
