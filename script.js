@@ -98,3 +98,20 @@ document.querySelector('a[href="#"]').addEventListener('click', function(e) {
     behavior: 'smooth'
   });
 });
+// Mobile menu toggle
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('active');
+  this.innerHTML = document.querySelector('.nav-links').classList.contains('active') 
+    ? '<i class="fas fa-times"></i>' 
+    : '<i class="fas fa-bars"></i>';
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+    if (window.innerWidth <= 768) {
+      document.querySelector('.nav-links').classList.remove('active');
+      document.querySelector('.menu-toggle').innerHTML = '<i class="fas fa-bars"></i>';
+    }
+  });
+});
