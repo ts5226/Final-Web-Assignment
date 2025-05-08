@@ -1,110 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character encoding and viewport settings -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title of the portfolio page -->
   <title>Taha Shah Portfolio</title>
+
+  <!-- Favicon for the website -->
   <link rel="icon" href="Taha.ico" type="image/x-icon">
+
+  <!-- Linking to Font Awesome icons for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Linking the custom stylesheet for styling the portfolio -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Parallax effect section for background scrolling -->
   <div class="parallax">
+    <!-- Layers of the parallax effect -->
     <div class="parallax-layer parallax-layer-back"></div>
     <div class="parallax-layer parallax-layer-deep"></div>
     <div class="parallax-layer parallax-layer-base">
+      
+      <!-- Header section with navigation and profile icon -->
       <header id="header">
-      <div class="hamburger">&#9776;</div>
+        <!-- Hamburger menu for mobile navigation -->
+        <div class="hamburger">&#9776;</div>
+        <!-- Navigation container with links and profile image -->
         <nav class="nav-container">
           <div class="profile-icon">
+            <!-- Profile image of the user -->
             <img src="Taha.png" alt="Taha Shah">
           </div>
+          <!-- Navigation links for the portfolio sections -->
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#proj">Projects</a></li>
-
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
+      <!-- Introduction section with a brief about the person -->
       <section class="intro">
         <div class="intro-text">
           <h2>Hi There! I'm</h2>
           <h1><span class="highlight">Taha Shah</span>,<br>A Computer Science Student<br>at NYU Abu Dhabi</h1>
+          <!-- Short bio of Taha Shah -->
           <p>Born in Memphis and raised in Karachi, I'm now exploring tech and life in Abu Dhabi. I love nature and enjoy swimming and cycling. Watching anime is one of my favorite pastimes when I am free.
-My family means the world to me, and chocolate adds sweetness to my life!</p>
+            My family means the world to me, and chocolate adds sweetness to my life!</p>
         </div>
+        <!-- Image of Taha Shah -->
         <div class="intro-image">
           <img src="Taha.png" alt="Taha Shah">
         </div>
       </section>
 
+      <!-- About section with a short introductory video -->
       <section class="short-video" id="about">
         <h2>About</h2>
+        <!-- Embedded video for the 'About' section -->
         <video controls>
           <source src="intro.mp4" type="video/mp4">
+          <!-- Fallback message if the video cannot be played -->
           Your browser does not support the video tag.
         </video>
       </section>
 
+      <!-- Projects section showcasing various assignments -->
       <section class="projects" id="proj">
         <h2>Projects</h2>
+        
+        <!-- First project: Pakistani Art -->
         <div class="project">
           <div class="project-text">
             <h3>Assignment #01</h3>
             <h4>Celebrating Pakistani Art</h4>
+            <!-- Description of the first project -->
             <p>A showcase of traditional Pakistani art forms with interactive elements.</p>
           </div>
+          <!-- Link to the live project -->
           <div class="project-img"><a href="https://ts5226.github.io/Pakistani-Art-Final/" target="_blank"><img src="project1.png" alt="Pakistani Art Project"></a></div>
         </div>
+
+        <!-- Second project: Catculus Crisis -->
         <div class="project">
           <div class="project-text">
             <h3>Assignment #02</h3>
             <h4>Catculus Crisis</h4>
+            <!-- Description of the second project -->
             <p>Catculus Crisis transforms tricky concepts into playful adventures, using comic-style storytelling, interactive puzzles, and immersive soundscapes to make learning feel like fun.</p>
           </div>
+          <!-- Link to the live project -->
           <div class="project-img"><a href="https://ariannevt.github.io/Cactulus-Crisis/index.html" target="_blank"><img src="project2.png" alt="Catculus Crisis Project"></a></div>
         </div>
+
+        <!-- Third project: The Colours of Sound -->
         <div class="project">
           <div class="project-text">
             <h3>Assignment #03</h3>
             <h4>The Colours of Sound</h4>
+            <!-- Description of the third project -->
             <p>An audio-visual journey where melodies paint emotions in immersive spatial sound.</p>
           </div>
+          <!-- Link to the live project -->
           <div class="project-img"><a href="https://alisavictory7.github.io/Com_Lab_Sound_Assignment/index.html" target="_blank"><img src="project3.png" alt="Colours of Sound Project"></a></div>
         </div>
+
+        <!-- Fourth project: Between Code and Chord -->
         <div class="project">
           <div class="project-text">
             <h3>Assignment #04</h3>
             <h4>Between Code and Chord</h4>
+            <!-- Description of the fourth project -->
             <p>A video project exploring the intersection of programming and music composition.</p>
           </div>
+          <!-- Link to the live project -->
           <div class="project-img"><a href="https://nursholpan.github.io/VideoPJ/html/index.html" target="_blank"><img src="project4.png" alt="Between Code and Chord Project"></a></div>
         </div>
       </section>
 
-        <section class="contact" id="contact">
-          <h2>Contact Me</h2>
-          <div class="contact-links">
-            <a href="https://www.instagram.com/tahashah306/?utm_source=ig_web_button_share_sheet" class="instagram" target="_blank">
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://github.com/ts5226" class="github" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="mailto:ts5226@nyu.edu" class="email">
-              <i class="fas fa-envelope"></i> Email
-            </a>
-          </div>
-        </section>
+      <!-- Contact section with social media links -->
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+          <!-- Instagram link -->
+          <a href="https://www.instagram.com/tahashah306/?utm_source=ig_web_button_share_sheet" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <!-- GitHub link -->
+          <a href="https://github.com/ts5226" class="github" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <!-- Email link -->
+          <a href="mailto:ts5226@nyu.edu" class="email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </section>
 
+      <!-- Footer with copyright information -->
       <footer>
         <p>&copy; 2025. Made with ❤️ by Taha</p>
       </footer>
     </div>
   </div>
+
+  <!-- Linking to external JavaScript file for interactivity -->
   <script src="script.js"></script>
 </body>
 </html>
