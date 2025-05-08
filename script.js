@@ -98,11 +98,20 @@ document.querySelector('a[href="#"]').addEventListener('click', function(e) {
     behavior: 'smooth'
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
+document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu functionality
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('show'));
+  });
+   document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        navLinks.classList.remove('show');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
     });
   });
