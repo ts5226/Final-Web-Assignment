@@ -388,6 +388,13 @@ footer {
   }
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .intro {
@@ -402,9 +409,18 @@ footer {
   }
   
   .nav-links {
-    display: none; /* Consider a hamburger menu for mobile */
+    display: none;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
   }
-  
+  .hamburger {
+    display: block;
+  }
   .project {
     flex-direction: column;
   }
@@ -421,6 +437,9 @@ footer {
   .contact-links {
     flex-direction: column;
     align-items: center;
+  }
+  .nav-links.show {
+    display: flex;
   }
 }
 
