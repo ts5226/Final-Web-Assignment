@@ -77,9 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Then run on scroll
   window.addEventListener('scroll', animateOnScroll);
-});
-// Add this to your existing script.js
-document.addEventListener('DOMContentLoaded', function() {
+
   // Force redraw of projects and contact sections
   setTimeout(function() {
     document.querySelector('.projects').style.display = 'none';
@@ -90,24 +88,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.contact').offsetHeight; // Trigger reflow
     document.querySelector('.contact').style.display = 'block';
   }, 100);
-});
-document.querySelector('a[href="#"]').addEventListener('click', function(e) {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-document.addEventListener('DOMContentLoaded', function() {
+
   // Hamburger menu functionality
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
   
+  // Toggle the navigation links when hamburger is clicked
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
     hamburger.setAttribute('aria-expanded', navLinks.classList.contains('show'));
   });
-   document.querySelectorAll('.nav-links a').forEach(link => {
+
+  // Close the navigation menu if a link is clicked on mobile view
+  document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 768) {
         navLinks.classList.remove('show');
@@ -115,10 +108,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-
-  const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
+  
+  // Scroll to top when clicking the home link
+  document.querySelector('a[href="#"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
