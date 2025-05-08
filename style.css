@@ -26,21 +26,6 @@ body {
   z-index: 1;
 }
 
-/*.parallax-layer-back {
-  transform: translateZ(-1px) scale(2);
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><rect fill="%231a1a1a" width="100" height="100"/><path fill="none" stroke="%23ff0066" stroke-width="0.5" d="M0,50 Q25,25 50,50 T100,50" /></svg>');
-  background-size: cover;
-  opacity: 0.3;
-  z-index: -1;
-}
-
-.parallax-layer-deep {
-  transform: translateZ(-2px) scale(3);
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><rect fill="%23121212" width="100" height="100"/><path fill="none" stroke="%23ff0066" stroke-width="0.2" d="M0,30 Q15,15 30,30 T60,30 T90,30" /></svg>');
-  background-size: cover;
-  opacity: 0.2;
-  z-index: -2;
-}*/
 
 header {
   background: rgba(30, 30, 30, 0.9);
